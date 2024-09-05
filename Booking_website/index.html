@@ -16,6 +16,10 @@
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
   crossorigin="anonymous"
 />
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 
 <body>
@@ -26,7 +30,9 @@
   
   <nav class="navbar bg-light navbar-light navbar-expand-sm">
     <div class="container-fluid d-flex justify-content-between">
-      <div class="navbar-brand">Home</div>
+      <div class="navbar-brand">
+        <a href="/index.html" rel="home">Home</a>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,6 +64,7 @@
     <h3 class="hero-heading">Filmora Cine</h3>
     <p class="hero-subheading">Photography by Shubham Patil</p>
    </div> -->
+   <div class="carousel-container" style="padding:10px; background-color: #F5F5F5;">     
    <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -74,7 +81,7 @@
       
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner" style="border-radius:10px;">
       <div class="carousel-item ">
         <img src="/images/img1.JPG" class="d-block w-100 img-fluid" alt="img1">
         <div class="carousel-caption d-md-block">
@@ -155,94 +162,136 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  </div>
+
+  <!-- <div class="about-parent">
+   <div class="container-about">
+      <h1 class="about-heading">About</h1>
+      <div class="card mb-3" style="max-width: 1600px; font-family: cursive;">
+        <div class="row g-0">
+          <div class="col-md-2">
+            <img src="/images/about.jpeg" class="img-fluid rounded-start" alt="about_img" style="height:200px;" >
+          </div>
+          <div class="col-md-10">
+            <div class="card-body">
+              <h5 class="card-title">Hello ! I'm Shubham Patil</h5>
+              <p class="card-text">a passionate photographer with a keen eye for capturing life's most beautiful moments. With a love for both nature and urban landscapes, my work reflects a blend of creativity and precision. Based in Maharashtra, I specialize in portrait, wedding, Prewedding photography, striving to turn every click into a timeless memory.</p>
+              <p class="card-text"><small class="text-body-secondary">Welcome to my portfolio!</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> -->
+  <div class="about-parent">
+    <div class="container-about">
+      <h1 class="about-heading">About</h1>
+      <div class="about row">
+        <div class="about-photo col-lg-3 col-md-3 col-sm-12 col-12">
+          <img src="/images/about.jpeg" alt="about_img" style="height:200px; width:200;" >
+        </div>
+        <div class="about-text col-lg-9 col-md-9 col-sm-12 col-12">
+          <h5 class="about-title">Hello ! I'm Shubham Patil</h5>
+          <p class="about-text">A passionate photographer with a keen eye for capturing life's most beautiful moments. With a love for both nature and urban landscapes, my work reflects a blend of creativity and precision. Based in Maharashtra, I specialize in portrait, wedding, Prewedding photography, striving to turn every click into a timeless memory.</p>
+          <p class="about-text"><small class="text-body-secondary">Welcome to my portfolio!</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
   
+  <div class="portfolio-parent">   
+  <div class="container-portfolio"> 
   <header class="home-header" id="Portfolio"> 
     <h1 class="home-heading">Portfolio</h1>
     <h4 class="home-subheading">Here are some glimpses of my work</h4>
   </header>
-   <div class="port_container">  
-      <div class="row">
-        <div class="col col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
-          <div class="category-card " style="width: 18rem;">
-            <a class="shoot-link" href="/wedding_category/index.html">
-            <img src="..." class="card-img-top" alt="resort" style="height: 250px;">
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between">
-                <h5>Wedding shoot</h5>
+   <div class="port_container">
+      <div class="portfolio">
+        <div class="swiper">       
+  
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide" style="border: none;">
+              <a href="/wedding_category/index.html" rel="wedding-page">  
+              <div class="image-box" style="height:250px;">
+                <img src="/wedding_category/wedding_images/wed1.JPG" alt="img1">
               </div>
-            </div></a>
-          </div>
-        </div>
-        <div class="col col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
-          <div class="category-card" style="width: 18rem;">
-            <a class="shoot-link" href="/prewedding_category/index.html">
-            <img src="......." class="card-img-top" alt="tower" style="height: 250px;">
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between">
-                <h5>Prewedding shoot</h5>
+              <div class="port-card-details">
+                <h4 class="card-title">Wedding</h4>
+            <!--   <h6 class="card-subtitle">Watch</h6> -->
+              </div> 
+            </a>
+            </div>
+            <div class="card  swiper-slide" style="border: none;" >
+              <a href="/prewedding_category/index.html" rel="prewedding-page"> 
+              <div class="image-box" style="height:250px;">
+                <img src="/prewedding_category/pre_images/pre4.JPG" alt="img2">
               </div>
-            </div></a>
-          </div>
-        </div>
-        <div class="col col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
-          <div class="category-card" style="width: 18rem;">
-            <a class="shoot-link" href="/babyshoot_category/index.html">
-            <img src="......" class="card-img-top" alt="skiing" style="height: 250px;">
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between">
-                <h5>Baby shoot</h5>
+              <div class="port-card-details">
+                <h4 class="card-title">Prewedding</h4>
+              <!--  <h6 class="card-subtitle">Watch</h6>-->
               </div>
-            </div></a>
-          </div>
-        </div>
-        <div class="col col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
-          <div class="category-card" style="width: 18rem;">
-            <a class="adventure-detail-link" href="/maternity_category/index.html">
-            <img src="......" class="card-img-top" alt="university" style="height: 250px;">
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between">
-                <h5>Maternity shoot</h5>
+              </a>
+            </div>
+            <div class="card  swiper-slide" style="border: none;" >
+              <a href="/engagement_category/index.html" rel="engagement-page"> 
+              <div class="image-box" style="height:250px;">
+                <img src="/engagement_category/engage_image/engage1.JPG" alt="img3">
               </div>
-            </div></a>
-          </div>
-        </div>
-      </div>
-      <div class="row" style="margin-top: 20px;" >
-        <div class="col col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
-          <div class="category-card " style="width: 18rem;">
-            <a class="shoot-link" href="/documentary_category/index.html">
-            <img src="..." class="card-img-top" alt="resort" style="height: 250px;">
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between">
-                <h5>Documentary shoot</h5>
+              <div class="port-card-details">
+               <h4 class="card-title">Engagement</h4> 
+              <!--  <h6 class="card-subtitle">Watch</h6> -->
               </div>
-            </div></a>
-          </div>
-        </div>
-        <div class="col col-6 col-sm-6 col-md-3 col-lg-3 d-flex justify-content-center align-items-center">
-          <div class="category-card" style="width: 18rem;">
-            <a class="shoot-link" href="#">
-            <img src="......." class="card-img-top" alt="tower" style="height: 250px;">
-            <div class="card-body">
-              <div class="card-text d-flex justify-content-between">
-                <h5>Freelance</h5>
+              </a>
+            </div>
+            <div class="card  swiper-slide" style="border: none;" >
+              <a href="/maternity_category/index.html" rel="maternity-page"> 
+              <div class="image-box" style="height:250px;">
+                <img src="/maternity_category/maternity_images/maternity1.JPG" alt="img4">
               </div>
-            </div></a>
-          </div>
+              <div class="port-card-details">
+               <h4 class="card-title">Maternity</h4>
+              <!--  <h6 class="card-subtitle">Watch</h6> -->
+              </div>
+              </a>
+            </div>
+            <div class="card  swiper-slide" style="border: none;" >
+              <a href="/babyshoot_category/index.html" rel="wedding-page"> 
+              <div class="image-box" style="height:250px;">
+                <img src="/babyshoot_category/baby_images/baby2.JPG" alt="img5">
+              </div>
+              <div class="port-card-details">
+               <h4 class="card-title">BabyShoot</h4> 
+              <!--   <h6 class="card-subtitle">Watch</h6> -->
+              </div>
+              </a>
+            </div>
+            </div>
+  
+          <div class="swiper-button-prev" style="color:#999"></div>
+          <!--<div class="swiper-pagination"></div>-->
+        
+      
         </div>
       </div>
-      </div>
+    </div>
+    </div>
+    </div>  
+
+     <div class="blog-parent">    
+      <div class="container-blog">     
       <header class="blog-header" id="Blogs"> 
         <h1 class="blog-heading">Blogs</h1>
         <h4 class="blog-subheading">Some Behind the shoot scenes</h4>
         <div class="card mb-3" style="margin-top: 30px;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="/images/collage.JPG" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">BTS</h5>
               <p class="card-text"><a href="...."  alt="BTS">Watch Now</a></p>
             </div>
           </div>
       </header>
+      </div>
+      </div>
    <footer>
     <div class="container">Created and designed by @PranitaRajput</div>
   </footer>
@@ -251,5 +300,12 @@
    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
    crossorigin="anonymous"
 ></script>
-   </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script src="/script.js"></script>
+</body>
    </html>
+
+
+
+
