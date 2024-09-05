@@ -18,3 +18,9 @@ node_modules/
 
 # Visual Studio Code
 .vscode/
+
+ # Ignore the node_modules directory
+../photography_portfolio/
+../portfolio/
+../to_do_list_app/
+
