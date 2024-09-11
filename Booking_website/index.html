@@ -28,7 +28,7 @@
   <!-- 1. Use appropriate css classes on nav element. -->
   <!-- 2. Add child elements as required. -->
   
-  <nav class="navbar bg-light navbar-light navbar-expand-sm">
+  <nav class="navbar bg-light navbar-light navbar-expand-sm" style="position: sticky; top:0px; z-index:1000;">
     <div class="container-fluid d-flex justify-content-between">
       <div class="navbar-brand">
         <a href="/index.html" rel="home">Home</a>
@@ -200,7 +200,7 @@
   </div>
   
   <div class="portfolio-parent">   
-  <div class="container-portfolio"> 
+  <div class="container-portfolio">
   <header class="home-header" id="Portfolio"> 
     <h1 class="home-heading">Portfolio</h1>
     <h4 class="home-subheading">Here are some glimpses of my work</h4>
@@ -224,7 +224,7 @@
             <div class="card  swiper-slide" style="border: none;" >
               <a href="/prewedding_category/index.html" rel="prewedding-page"> 
               <div class="image-box" style="height:250px;">
-                <img src="/prewedding_category/pre_images/pre4.JPG" alt="img2">
+                <img src="/prewedding_category/pre_images/pre15.JPG" alt="img2">
               </div>
               <div class="port-card-details">
                 <h4 class="card-title">Prewedding</h4>
@@ -277,7 +277,101 @@
     </div>
     </div>  
 
-     <div class="blog-parent">    
+    <div class="packages-parent">
+      <div class="container-packages">
+        <header class="packages-header" id="Packages">
+          <h1 class="packages-heading">Packages</h1>
+          <h4 class="packages-subheading">Check out the packages and pricing we offer</h4>
+        </header>
+        <div class="packages-container">
+          <div class="package-grid">
+            <div class="package-item">
+              <h5>Wedding Photography</h5>
+              <p>traditional + candid <br/> photobook- 50 pages(280 photos) <br/> calendar + minibook + frame</p>
+              <div class="price">
+                <p>35000/-</p>
+                <a href="#" class="btn btn-primary" class="btn btn-primary" style="color: beige; background-color: #999; border: none;" >Book</a>
+              </div>
+            </div>
+            <div class="package-item ">
+              <h5>Wedding Videography</h5>
+              <p>full function regular video <br/> full hd video + cinematic <br/> highlight + pendrive <br/> [drone 6000/-]</p>
+              <div class="price">
+                <p>15000/-</p>
+                <a href="#" class="btn btn-primary" class="btn btn-primary" style="color: beige; background-color: #999; border: none;" >Book</a>
+              </div>
+            </div>
+              
+            <div class="package-item ">
+              <h5>Wedding Cinematic</h5>
+              <p>teaser + <br/> wedding story +<br/>Book</p>
+              <div class="price">
+                <p>15000/-</p>
+                <a href="#" class="btn btn-primary" style="color: beige; background-color: #999; border: none;">Book</a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="explore">
+            <a href="/packages/index.html" class="btn btn-primary" style="color: beige; background-color: #999; border: none;">Explore More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    
+      <div class="review-parent">
+        <div class="container mt-5" id="reviews-section">
+          <h2 class="text-center mb-4">Customer Reviews</h2>
+          <div id="reviewCards" class="row">
+            <!-- Existing reviews will be dynamically inserted here -->
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Wedding Photography</h6>
+                  <p class="card-text">"Amazing experience! The team captured every beautiful moment of our wedding. Highly recommend!"</p>
+                  <div class="review-rating">
+                    <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      
+        <!-- Add Review Form -->
+        <div class="mt-5">
+          <h4 class="add-review">Add Your Review</h4>
+          <form id="reviewForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="title" class="form-label">Review Title</label>
+              <input type="text" class="form-control" id="title" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Review</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="rating" class="form-label">Rating (1 to 5 stars)</label>
+              <input type="number" class="form-control" id="rating" min="1" max="5" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Review</button>
+          </form>
+        </div>
+      
+      
+    
+    
+    
+    
+   <!--   <div class="blog-parent">    
       <div class="container-blog">     
       <header class="blog-header" id="Blogs"> 
         <h1 class="blog-heading">Blogs</h1>
@@ -291,7 +385,7 @@
           </div>
       </header>
       </div>
-      </div>
+      </div> -->
    <footer>
     <div class="container">Created and designed by @PranitaRajput</div>
   </footer>
