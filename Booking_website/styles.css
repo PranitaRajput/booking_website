@@ -55,11 +55,14 @@
     margin-left: 25px;
   }
   .home-heading{
-    color:rgb(113, 94, 57);
-    font-family: cursive;
+    color:#3d3d3d;
+    font-weight: bold;
+    font-family: serif;
+    
   }
   .home-subheading{
     color:#908b8b;
+    font-weight: lighter;
   }
   .hero-heading{
     color:whitesmoke;
@@ -84,16 +87,19 @@
   .card-body{
     color:#333;
     text-decoration: none;
+    
   }
   .category-card a{
     text-decoration: none;
   }
   .blog-heading{
-    color:rgb(113, 94, 57);
-    font-family: cursive;
+    color:#3D3D3D;
+    font-family: serif;
+    font-weight: bold;
   }
   .blog-subheading{
     color:#908b8b;
+    font-weight: lighter;
   }
   .carousel-item{
     height:450px;
@@ -178,10 +184,10 @@
   background-color:#fdf8f8;
 }
 .baby_container{
-  background-color: rgb(253, 225, 229);
+  background-color: #fdf8f8;
 }
 .container-portfolio{
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
   border-radius: 10px;
   padding:1%;
   /*box-shadow: 0 0 10px 5px rgba(153, 145, 145, 0.5);
@@ -191,18 +197,17 @@
 
 .container-blog{
   background-color: white;
-  border-radius: 10px;
   padding:1%;
  /* padding:3%;
   box-shadow: 0 0 10px 5px rgba(153, 145, 145, 0.5);
   border:1px solid #ccc; */
 }
-.blog-parent{
+/*.blog-parent{
   background-color: #F5F5F5;
   padding:40px;
-}
+} */
 .portfolio-parent{
-  background-color:#F5F5F5;
+  background-color:#f5f5f5;
   padding:10px;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -224,8 +229,9 @@
 }
 
 .about-heading{
-  color:rgb(113, 94, 57);
-  font-family: cursive;
+  color: #3d3d3d;
+  font-family: serif;
+  font-weight: bold;
   margin-left: 20px;
   margin-bottom:20px;
 }
@@ -253,7 +259,7 @@
   }
 }
 .swiper-slide {
-  background: #945050;
+  background: #faf8f8;
   padding:0px;
   margin:0px;
   border-radius: 8px;
@@ -354,7 +360,7 @@
   }
   .swiper-slide .image-box img{
     height: 100%;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
     box-shadow: 0 0 10px 5px rgba(153, 145, 145, 0.5);
     width:100%;
     padding: 0px;
@@ -484,11 +490,13 @@
 }
 .packages-heading{
   display:flex;
-  font-family: cursive;
-  color: rgb(113, 94, 57);
+  font-family: serif;
+  font-weight: bold;
+  color: #3D3D3D;
 }
 .packages-subheading {  
   color:#908b8b;
+  font-weight: lighter;
 }
 /*.packages-container {
   display: flex;
@@ -595,12 +603,12 @@ form#reviewForm {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width:50%;
+ /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
 }
 
 form#reviewForm .form-label {
   font-weight: bold;
+  color:#4d4d4d
 }
 
 form#reviewForm .form-control {
@@ -611,12 +619,12 @@ form#reviewForm .form-control {
 }
 
 form#reviewForm .form-control:focus {
-  border-color: #007bff;
+  border-color: #3d3d3d;
   box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 form#reviewForm button {
-  background-color: #007bff;
+  background-color: #3d3d3d;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -635,11 +643,24 @@ form#reviewForm button:hover {
   }
   form#reviewForm {
     background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width:100%;
 
+  }
+  .add-review {
+    margin-left: 10%;
+  }
+  #reviews-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .container-blog{
+    padding-top:30px;
+    width:100%;
+    box-shadow: none;
+    background-color: #f5f5f5;
   }
 }
 .review-parent{
@@ -648,7 +669,21 @@ form#reviewForm button:hover {
   padding-top:10px;
 }
 .add-review {
-  margin-left:15%;
+  margin-left:30%;
+  color: #3D3D3D;
+  font-family: seerif;
+  font-weight: bold;
+}
+.container-blog {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+.text-center {
+  font-family: serif;
+  font-weight: bold;
+  color: #3D3D3D;
 }
 
 
