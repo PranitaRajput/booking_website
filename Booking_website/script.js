@@ -107,5 +107,9 @@
   }
 });
 
+document.getElementById("submitBooking").addEventListener("click", function() {
+  // Assuming form submission sends details to backend
+  alert("Form submitted successfully!");
+})
 
   
